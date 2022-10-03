@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Source Sans Pro", monospace;
+  font-size: 0.875rem;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+span {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red_it {
+  font-style: italic;
+  color: red;
+}
+
+span > .it {
+  font-weight: lighter;
+  font-style: italic;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+#home {
+  display: inline-flex;
+  width: 100%;
+  margin: auto 0;
+}
+
+#home_text {
+  display: block;
+  margin: 2em;
+  width: 65%;
+  padding: 1em;
+}
+
+#banner_1 {
+  width: 35%;
+}
+
+.link {
+    color: black;
+}
+
+.round_i {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
+}
+
+hr .solid {
+  width: 100%;
+  border-top: 3px solid #bbb;
+}
+
+code {
+  display: block;
+  width: fit-content;
+  margin: 2em;
+  padding: 1em;
+  padding-right: 5em;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f2f2f2;
+}
+
