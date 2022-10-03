@@ -1,0 +1,64 @@
+main{
+    text-align: center;
+}
+.gallery{
+    font-weight: 800;
+}
+.box{
+    background-color: #F2F2F2;
+    font-family: "Noto Sans Mono";
+}
+.underline{
+    text-decoration: underline;
+}
+.images{
+    display: grid;
+    justify-content: left;
+    grid-template-columns: repeat(auto-fill,minmax(28%,1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(28%,1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+}
+.img-gallery{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------FOOTER---------------*/
+footer{
+    background-color: #504651;
+    color: white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.twitter, .facebook, .linkedin, .github, .instagram{
+    border: 3px solid #7AA194;
+    border-radius: 50%;
+    background-color: #7AA194;
+    padding: 10px;
+    text-align: center;
+    margin-right: 12px;
+    width: 17px;
+}
+footer > section {
+    text-align: center;
+    display: inline-flex;
+    margin-top: 3%;
+}
+.love{
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+.red{
+    color: red;
+}
+.underblue{
+    text-decoration: underline;
+    color: #7AA194;
+}
