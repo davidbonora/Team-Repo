@@ -11,23 +11,24 @@
 }
 
 h1 {
-    font-size: 4em;
+  font-size: 4em;
 }
 
 span {
   font-weight: normal;
 }
 
-.bold {
+span.bold {
   font-weight: bold;
 }
 
-.red_it {
+span.red-it {
+  font-weight: bold;
   font-style: italic;
   color: red;
 }
 
-span > .it {
+span.it {
   font-weight: lighter;
   font-style: italic;
 }
@@ -54,7 +55,7 @@ h2 {
 }
 
 .link {
-    color: black;
+  color: black;
 }
 
 .round_i {
@@ -78,4 +79,3 @@ code {
   font-family: "Source Sans Pro", sans-serif;
   background-color: #f2f2f2;
 }
-
