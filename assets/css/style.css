@@ -62,7 +62,7 @@ main{
     text-align: center;
     opacity: 1;
   }
-  #modal{
+  #modal, #modal2, #modal3, #modal4, #modal5, #modal6, #modal7, #modal8, #modal9, #modal10, #modal11, #modal12, #modal13, #modal14, #modal15, #modal16{
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     position: fixed;
@@ -92,7 +92,7 @@ main{
     margin: 0;
  }
  
- #modal{
+ #modal, #modal2, #modal3, #modal4, #modal5, #modal6, #modal7, #modal8, #modal9, #modal10, #modal11, #modal12, #modal13, #modal14, #modal15, #modal16{
     position:fixed;
     top:0px;
     left:0px;
@@ -104,7 +104,7 @@ main{
     display:none;
     opacity:0.9;
  }
- #modal > a{
+ #modal > a, #modal2 > a, #modal3 > a, #modal4 > a, #modal5 > a, #modal6 > a, #modal7 > a, #modal8 > a, #modal9 > a, #modal10 > a, #modal11 > a, #modal12 > a, #modal13 > a, #modal14 > a, #modal15 > a, #modal16 > a  {
     position:fixed;
     top:0px;
     left:0px;
@@ -121,12 +121,27 @@ main{
  
  #modalContent > a{
     position:absolute;
-    top:2.5%;
-    right:2.5%;
+    top:-20%;
+    right:-20%;
     color: black;
     background-color: transparent;
     font-size: 30px;
     text-decoration: none;
+ }
+ .lorem{
+    font-size: 0.8em;
+    margin-bottom: 10em;
+ }
+ .bot{
+    font-size: 0.9em;
+    border: 2px solid white;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-decoration: none;
+    color: white;
  }
 /*-----------FOOTER---------------*/
 footer{

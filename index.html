@@ -1,64 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/be90ca962d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/be90ca962d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <main>
-        <h1>Gallery</h1>
-        <p>This is a <span class="gallery">Gallery</span> component.It can behave as a <span class="box">lightbox</span> (when given the lightbox class), and you can customise its appearance with a <br> number of modifiers, as well as assign it an optional <span class="box">onload</span> or <span class="box">onscroll</span> transition modifier (<span class="underline">details</span>).</p>
-        <section class="images">
-            <div class="container">
-                <img class="img-gallery" src="img/gallery/thumbs/01.jpg" alt="Ojo">
-                <div class="desv">
-                <div class="text"><p><span>Titulo</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusamus.</span></p>
-                </div></div>
-            </div>
-        
-        
-        <a href="#modal" title="chico nadando" class="btn"><img class="img-gallery" src="img/gallery/thumbs/02.jpg" alt="chico nadando"></a>
-        <div id="modal">
+      <h1>Gallery</h1>
+      <p>
+        This is a <span class="gallery">Gallery</span> component.It can behave
+        as a <span class="box">lightbox</span> (when given the lightbox class),
+        and you can customise its appearance with a <br />
+        number of modifiers, as well as assign it an optional
+        <span class="box">onload</span> or
+        <span class="box">onscroll</span> transition modifier (<span
+          class="underline"
+          >details</span
+        >).
+      </p>
+      <section class="images">
+        <div class="container">
+          <a href="#modal" title="Ojo" class="btn"></a
+          ><img class="img-gallery" src="img/gallery/thumbs/01.jpg" alt="Ojo" />
+          <div id="modal">
             <a href="#cerrar"></a>
+            <div id="modalContent">
+              <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+              <img src="img/gallery/fulls/01.jpg" alt="Ojo" />
+            </div>
+          </div>
+          <div class="desv">
+            <div class="text">
+              <p>
+                <span class="titu">Image Title</span
+                    ><br><span class="lorem"
+                      > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maiores, accusamus.</span
+                    ><br><br><a class="bot" href="#modal">FULL WIDTH</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+            <a href="#modal2" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/02.jpg" alt="Chico nadando" />
+            <div id="modal2">
+              <a href="#cerrar"></a>
               <div id="modalContent">
                 <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
-                 <img src="img/gallery/fulls/02.jpg" alt="chico nadando">
+                <img src="img/gallery/fulls/02.jpg" alt="Chico nadando" />
               </div>
-          </div>
-        
-        <a href="img/gallery/fulls/03.jpg"><img class="img-gallery" src="img/gallery/thumbs/03.jpg" alt="teclado con teclas transparentes"></a>
-        <a href="img/gallery/fulls/04.jpg"><img class="img-gallery" src="img/gallery/thumbs/04.jpg" alt="cubo de rubik pentagonal"></a>
-        <a href="img/gallery/fulls/05.jpg"><img class="img-gallery" src="img/gallery/thumbs/05.jpg" alt="Spider-man leyendo"></a>
-        <a href="img/gallery/fulls/06.jpg"><img class="img-gallery" src="img/gallery/thumbs/06.jpg" alt="Caza de la WWII"></a>
-        <a href="img/gallery/fulls/07.jpg"><img class="img-gallery" src="img/gallery/thumbs/07.jpg" alt="Foto de mapa"></a>
-        <a href="img/gallery/fulls/08.jpg"><img class="img-gallery" src="img/gallery/thumbs/08.jpg" alt="Furgoneta amarilla"></a>
-        <a href="img/gallery/fulls/09.jpg"><img class="img-gallery" src="img/gallery/thumbs/09.jpg" alt="Rollercoaster"></a>
-        <a href="img/gallery/fulls/10.jpg"><img class="img-gallery" src="img/gallery/thumbs/10.jpg" alt="Bicicleta amarillo fluor"></a>
-        <a href="img/gallery/fulls/11.jpg"><img class="img-gallery" src="img/gallery/thumbs/11.jpg" alt="Robot"></a>
-        <a href="img/gallery/fulls/12.jpg"><img class="img-gallery" src="img/gallery/thumbs/12.jpg" alt="Montaña"></a>
-        <a href="img/gallery/fulls/13.jpg"><img class="img-gallery" src="img/gallery/thumbs/13.jpg" alt="Tenista"></a>
-        <a href="img/gallery/fulls/14.jpg"><img class="img-gallery" src="img/gallery/thumbs/14.jpg" alt="Tatuaje"></a>
-        <a href="img/gallery/fulls/15.jpg"><img class="img-gallery" src="img/gallery/thumbs/15.jpg" alt="Cerveza Guinness"></a>
-        <a href="img/gallery/fulls/16.jpg"><img class="img-gallery" src="img/gallery/thumbs/16.jpg" alt="Snowboard"></a></section>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal2">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal3" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/03.jpg" alt="Chico nadando" />
+            <div id="modal3">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/03.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal3">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal4" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/04.jpg" alt="Chico nadando" />
+            <div id="modal4">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/04.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal4">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal5" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/05.jpg" alt="Chico nadando" />
+            <div id="modal5">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/05.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal5">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal6" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/06.jpg" alt="Chico nadando" />
+            <div id="modal6">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/06.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal6">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal7" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/07.jpg" alt="Chico nadando" />
+            <div id="modal7">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/07.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal7">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal8" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/08.jpg" alt="Chico nadando" />
+            <div id="modal8">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/08.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal8">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal9" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/09.jpg" alt="Chico nadando" />
+            <div id="modal9">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/09.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal9">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal10" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/10.jpg" alt="Chico nadando" />
+            <div id="modal10">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/10.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal10">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal11" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/11.jpg" alt="Chico nadando" />
+            <div id="modal11">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/11.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal11">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal12" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/12.jpg" alt="Chico nadando" />
+            <div id="modal12">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/12.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal12">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal13" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/13.jpg" alt="Chico nadando" />
+            <div id="modal13">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/13.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal13">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal14" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/14.jpg" alt="Chico nadando" />
+            <div id="modal14">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/14.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal14">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal15" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/15.jpg" alt="Chico nadando" />
+            <div id="modal15">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/15.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal15">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="container">
+            <a href="#modal16" title="Chico nadando" class="btn"></a
+            ><img class="img-gallery" src="img/gallery/thumbs/16.jpg" alt="Chico nadando" />
+            <div id="modal16">
+              <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                <img src="img/gallery/fulls/16.jpg" alt="Chico nadando" />
+              </div>
+            </div>
+            <div class="desv">
+              <div class="text">
+                <p>
+                  <span class="titu">Image Title</span
+                  ><br><span class="lorem"
+                    > Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores, accusamus.</span
+                  ><br><br><a class="bot" href="#modal16">FULL WIDTH</a>
+                </p>
+              </div>
+            </div>
+        </div>
+      </section>
     </main>
-    
+
     <footer>
-    <section>
+      <section>
         <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
         <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
         <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
         <div class="linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
         <div class="github"><i class="fa-brands fa-github"></i></div>
-    </section>
-    <p class="love">Made with <span class="red"><i class="fa-solid fa-heart"></i></span> by <span class="underblue">CODE SPACE</span> Team</p>
+      </section>
+      <p class="love">
+        Made with <span class="red"><i class="fa-solid fa-heart"></i></span> by
+        <span class="underblue">CODE SPACE</span> Team
+      </p>
     </footer>
-</body>
+  </body>
 </html>
