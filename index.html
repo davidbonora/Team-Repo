@@ -17,10 +17,25 @@
         <h1>Gallery</h1>
         <p>This is a <span class="gallery">Gallery</span> component.It can behave as a <span class="box">lightbox</span> (when given the lightbox class), and you can customise its appearance with a <br> number of modifiers, as well as assign it an optional <span class="box">onload</span> or <span class="box">onscroll</span> transition modifier (<span class="underline">details</span>).</p>
         <section class="images">
-        <a href="img/gallery/fulls/01.jpg"><img class="img-gallery" src="img/gallery/thumbs/01.jpg" alt="Ojo"></a>
-        <a href="img/gallery/fulls/02.jpg"><img class="img-gallery" src="img/gallery/thumbs/02.jpg" alt="chico nadando"></a>
+            <div class="container">
+                <img class="img-gallery" src="img/gallery/thumbs/01.jpg" alt="Ojo">
+                <div class="desv">
+                <div class="text"><p><span>Titulo</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusamus.</span></p>
+                </div></div>
+            </div>
+        
+        
+        <a href="#modal" title="chico nadando" class="btn"><img class="img-gallery" src="img/gallery/thumbs/02.jpg" alt="chico nadando"></a>
+        <div id="modal">
+            <a href="#cerrar"></a>
+              <div id="modalContent">
+                <a href="#cerrar"><i class="fa-solid fa-x"></i></a>
+                 <img src="img/gallery/fulls/02.jpg" alt="chico nadando">
+              </div>
+          </div>
+        
         <a href="img/gallery/fulls/03.jpg"><img class="img-gallery" src="img/gallery/thumbs/03.jpg" alt="teclado con teclas transparentes"></a>
-        <a href="img/gallery/fulls/04.jpg"><img src="img/gallery/thumbs/04.jpg" alt="cubo de rubik pentagonal"></a>
+        <a href="img/gallery/fulls/04.jpg"><img class="img-gallery" src="img/gallery/thumbs/04.jpg" alt="cubo de rubik pentagonal"></a>
         <a href="img/gallery/fulls/05.jpg"><img class="img-gallery" src="img/gallery/thumbs/05.jpg" alt="Spider-man leyendo"></a>
         <a href="img/gallery/fulls/06.jpg"><img class="img-gallery" src="img/gallery/thumbs/06.jpg" alt="Caza de la WWII"></a>
         <a href="img/gallery/fulls/07.jpg"><img class="img-gallery" src="img/gallery/thumbs/07.jpg" alt="Foto de mapa"></a>
