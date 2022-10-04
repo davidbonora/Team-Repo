@@ -18,30 +18,35 @@
   <body>
     <main>
       <section id="home">
-        <div id="home_text">
-          <h1>
-            <span class="bold">>_ </span><span class="red-it">CODE</span
-            ><span class="it"> Team</span>
-          </h1>
-          <h2>
-            A responsive single-page template (modular, highly modifiable)
-            designed by <a href="" class="link">CODE SPACE</a> and released for
-            free under the <a href="" class="link">Creative Commons</a>.
-          </h2>
-          <p>
-            This is a Banner component, and is usually used as an intro or
-            opening statement. You can customize its appearance with a number of
-            modifiers, as well as assign it an optional onload or onscroll
-            transition modifier (<a href="">details</a>).
-          </p>
-          <button>GET STARTED</button>
+        <div id="home_screen">
+          <div id="home_text">
+            <h1 id="home_title">
+              <i class="fa-solid fa-terminal"></i
+              ><span class="red-it">CODE</span><span class="it">Team</span>
+            </h1>
+            <h2 id="home_subt">
+              A responsive single-page template (modular, highly modifiable)
+              designed by <a href="" class="link">CODE SPACE</a> and released
+              for free under the <a href="" class="link">Creative Commons</a>.
+            </h2>
+            <p>
+              This is a <span class="bold">Banner</span> component, and is
+              usually used as an intro or opening statement. You can customize
+              its appearance with a number of modifiers, as well as assign it an
+              optional <code>onload</code> or <code>onscroll</code> transition
+              modifier (<a href="">details</a>).
+            </p>
+            <button>GET STARTED</button>
+          </div>
+          <div id="home_image">
+            <img src="img/banner.jpg" alt="diving" id="banner_1" />
+          </div>
         </div>
-        <img src="img/banner.jpg" alt="diving" id="banner_1" />
       </section>
       <section id="add-elem-2">
-        <div id="code">
+        <div id="ae2_code">
           <h3>Code</h3>
-          <code>
+          <code id="ae2_code">
             <pre>
 i = 0; 
 
@@ -56,9 +61,9 @@ print 'It took ' + i `'iterations to sort the deck.';
           </code>
         </div>
         <hr class="solid" />
-        <div id="icons">
+        <div id="ae2_icons">
           <h3>Icons</h3>
-          <div id="style1">
+          <div id="ae2_style1">
             <h4>Style #1</h4>
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-facebook-f"></i>
@@ -66,7 +71,7 @@ print 'It took ' + i `'iterations to sort the deck.';
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-youtube"></i>
           </div>
-          <div id="style2">
+          <div id="ae2_style2">
             <h4>Style #2</h4>
             <i class="round_i fa-brands fa-twitter"></i>
             <i class="round_i fa-brands fa-facebook-f"></i>
@@ -78,52 +83,52 @@ print 'It took ' + i `'iterations to sort the deck.';
 
         <hr class="solid" />
 
-        <div id="buttons">
+        <div id="ae2_buttons">
           <h3>Buttons</h3>
-          <div id="buttons">
-            <button class="first_row bk_button"></button>
-            <button class="first_row wt_button"></button>
-            <button class="second_row bk_button"></button>
-            <button class="second_row wt_button"></button>
-            <button class="second_row sm_button"></button>
-            <button class="fit bk_button"></button>
-            <button class="fit wt_button"></button>
-            <button class="fit bk_button"></button>
-            <button class="fit wt_button"></button>
-            <button class="fit_sm bk_button"></button>
-            <button class="fit_sm wt_button"></button>
-            <button class="fit_sm bk_button"></button>
-            <button class="fit_sm wt_button"></button>
-            <button class="icon bk_button" id="search"></button>
-            <button class="icon wt_button" id="dload"></button>
-            <button class="low_alpha bk_button"></button>
-            <button class="low_alpha wt_button"></button>
+          <div id="ae2_buttons">
+            <button class="first_row bk_button">Primary</button>
+            <button class="first_row wt_button">Default</button>
+            <button class="second_row bk_button">Large</button>
+            <button class="second_row wt_button">Default</button>
+            <button class="second_row sm_button">Small</button>
+            <button class="fit wt_button">Fit</button>
+            <button class="fit bk_button">Fit</button>
+            <button class="fit bk_button">Fit</button>
+            <button class="fit wt_button">Fit</button>
+            <button class="fit_sm bk_button">Fit+Small</button>
+            <button class="fit_sm wt_button">Fit+Small</button>
+            <button class="fit_sm bk_button">Fit+Small</button>
+            <button class="fit_sm wt_button">Fit+Small</button>
+            <button class="icon bk_button" id="search">Icon</button>
+            <button class="icon wt_button" id="dload">Icon</button>
+            <button class="low_alpha bk_button">Primary</button>
+            <button class="low_alpha wt_button">Default</button>
           </div>
         </div>
 
         <hr class="solid" />
 
-        <div id="actions">
+        <div id="ae2_actions">
           <h3>Actions</h3>
-          <div id="default">
+          <div id="ae2_default">
             <h4>Default</h4>
-            <button class="first_row bk_button"></button>
-            <button class="first_row wt_button"></button>
+            <button class="first_row bk_button">Default</button>
+            <button class="first_row wt_button">Default</button>
           </div>
-          <div id="small">
+          <div id="ae2_small">
             <h4>Small</h4>
-            <button class="sm_row bk_button"></button>
-            <button class="sm_row wt_button"></button>
+            <button class="sm_row bk_button">Small</button>
+            <button class="sm_row wt_button">Small</button>
           </div>
-          <div id="stacked">
+          <div id="ae2_stacked">
             <h4>Stacked</h4>
-            <button class="stack bk_button"></button>
-            <button class="stack wt_button"></button>
+            <button class="stack bk_button">Default</button>
+            <button class="stack wt_button">Default</button>
           </div>
-          <div id="stacked-fit">
+          <div id="ae2_stacked-fit">
             <h4>Stacked+Fit</h4>
-            <button class="stack_fit bk_button"></button>
-            <button class="stack_fit wt_button"></button>
+            <button class="stack_fit bk_button">Default</button>
+            <button class="stack_fit wt_button">Default</button>
           </div>
         </div>
       </section>
