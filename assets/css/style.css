@@ -1,5 +1,5 @@
 :root {
-  font-size: 0.975rem;
+  font-size: 0.875rem;
   font-family: "Source Sans Pro", sans-serif;
   --blue: #0d6efd;
   --indigo: #6610f2;
@@ -44,7 +44,6 @@
 
 .spotlight-text > h2 {
   margin-top: 1em;
-  margin-bottom: 1em;
   font-weight: 300;
   font-size: 2rem;
 }
@@ -62,13 +61,23 @@
   min-height: 100%;
 }
 
-.spotlight-text code {
+.spotlight-text code,
+.text code {
   background-color: #f2f2f2;
+  padding: 0.25em;
 }
 
-.spotlight-text a {
+.spotlight-text a,
+.text a {
   color: #807668;
   text-decoration-color: var(--black);
+}
+
+.spotlight-text a:hover,
+.text a:hover {
+  color: #8be3ee;
+  border-color: #8be3ee;
+  text-decoration: none;
 }
 
 .spotlight-text .bold {
@@ -87,19 +96,25 @@
   margin-bottom: 2em;
 }
 
-button:hover {
+.spotlight-text button:hover {
   color: #8be3ee;
   border-color: #8be3ee;
 }
 
-.text {
-  display: flex;
+/*Additional elements*/
+
+.add-elements {
+  font-weight: 300;
+  color: #807668;
 }
 
 .elements > h1 {
   text-align: center;
   padding-top: 2em;
   padding-bottom: 1em;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--black);
 }
 
 .elements > p {
@@ -108,13 +123,179 @@ button:hover {
 }
 
 .elements .italic {
-    font-style: italic;
+  font-style: italic;
 }
 
 .elements .emphasized {
-    font-style: e;
+  font-style: e;
 }
 
-ul {
-  list-style-type: disc !important;
+.text,
+.headings,
+.unordered-list,
+.ordered-list,
+.definition-list,
+.blockquote-example {
+  border-bottom: 2px solid #eaeaea;
+  margin: 0 10%;
+  padding-bottom: 3em;
+  display: flex;
+  margin-bottom: 3em;
+}
+
+.text u {
+  text-decoration-color: var(--black);
+}
+
+.text b,
+strong {
+  color: var(--black);
+}
+
+.text > h3,
+.headings > h3,
+.unordered-list > h3,
+.ordered-list > h3,
+.definition-list > h3,
+.blockquote-example > h3 {
+  font-weight: 300;
+  color: var(--black);
+  flex-basis: 30%;
+}
+
+.text > p,
+.heading-examples,
+.unordered-examples,
+.ordered-example,
+.definition-examples,
+blockquote {
+  flex-basis: 70%;
+}
+
+.heading-examples > h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  color: var(--black);
+  padding-bottom: 1em;
+}
+
+.heading-examples > h1 {
+  font-size: 2.5em;
+  padding-bottom: .4em;
+}
+
+.heading-examples > h6 {
+  padding-bottom: 2.5em;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.heading-example-1 > h3, 
+.heading-example-2 > h4,
+.heading-example-3 > h5 {
+  font-style: italic;
+  color: #807668;
+}
+
+.heading-examples p {
+  text-align: justify;
+  color: var(--black);
+  padding-top: 1em;
+}
+
+.heading-example-1 p,
+.heading-example-2 p{
+  padding-bottom: 2.5em;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.heading-example-1 > h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: var(--black);
+  padding-top: .8em;
+  padding-bottom: .2em;
+}
+
+.heading-example-2 > h2 {
+  font-weight: 300;
+  color: var(--black);
+  padding-top: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+.heading-example-3 > h3 {
+  font-weight: 300;
+  color: var(--black);
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+.default-list, .alternate-list {
+  list-style: none;
+}
+
+.default-list li::before {
+  content: "\2022";
+  color: var(--black);
+  font-weight: bold;
+  width: 1em;
+  margin-right: 1em;
+}
+
+.default-list li {
+  color: #807668;
+  padding: 0.1em;
+}
+
+.unordered-list p {
+  margin-bottom: 1em;
+  color: var(--black);
+}
+
+.unordered-list p:last-of-type {
+  margin-top: 1.5em;
+}
+
+.alternate-list li {
+  padding: 0.5em;
+}
+
+.alternate-list li:not(:last-of-type){
+  border-bottom: 2px solid #eaeaea;
+}
+
+.ordered-list li {
+  list-style-position: inside;
+  padding: 0.1em;
+}
+
+.ordered-list li::before {
+  content: "";
+  margin-right: 0.3em;
+}
+
+.definition-examples dt {
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.definition-examples dd {
+  padding-left: 2em;
+}
+
+.definition-examples dd:not(:last-of-type) {
+  padding-bottom: 1em;
+}
+
+blockquote {
+  border-left: 4px solid #d2d0d0;
+  font-style: italic;
+  line-height: 1.5em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 2em;
 }
