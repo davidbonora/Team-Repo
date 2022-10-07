@@ -92,7 +92,14 @@ span.bold {
   color: black;
 }
 
-.round_i {
+/* ----- Additional Elements 2 ----- */
+
+#add-elem-2 {
+  display: flex;
+  height: auto;
+}
+
+.ae2_round_i {
   display: inline-block;
   border-radius: 60px;
   box-shadow: 0 0 2px #888;
@@ -107,6 +114,12 @@ hr.solid {
 .wt_button {
   background-color: white;
   color: black;
+  border: 1px solid gray;
+}
+
+.wt_button {
+  background-color: black;
+  color: white;
   border: 1px solid gray;
 }
 
