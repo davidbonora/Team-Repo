@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Source+Sans+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/b583bfb7e6.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>>_CODETeam</title>
-  </head>
-  <body>
-    <main>
-      <section id="home">
-        <!----Homescreen---->
-        <div id="home_screen">
-          <div id="home_text">
-            <h1 id="home_title">
-              <i class="fa-solid fa-terminal"></i
-              ><span class="red-it">CODE</span><span class="it">Team</span>
-            </h1>
-            <h2 id="home_subt">
-              A responsive single-page template (modular, highly modifiable)
-              designed by <a href="" class="link">CODE SPACE</a> and released
-              for free under the <a href="" class="link">Creative Commons</a>.
-            </h2>
-            <p id="home_p">
-              This is a <span class="bold">Banner</span> component, and is
-              usually used as an intro or opening statement. You can customize
-              its appearance with a number of modifiers, as well as assign it an
-              optional <code>onload</code> or <code>onscroll</code> transition
-              modifier (<a href="" class="link">details</a>).
-            </p>
-            <button id="home_button" class="wt_button">GET STARTED</button>
-          </div>
-          <div id="home_image">
-            <img src="img/banner.jpg" alt="diving" id="banner_1" />
-          </div>
-        </div>
-      </section>
-      <!---- Additional elements 2 ---->
-      <section id="add-elem-2">
-        <div id="ae2_code">
-          <h3>Code</h3>
-          <code id="ae2_code">
-            <pre>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Source+Sans+Pro&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/b583bfb7e6.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>>_CODETeam</title>
+    </head>
+    <body>
+        <main>
+            <section id="home">
+                <!----Homescreen---->
+                <div id="home_screen">
+                    <div id="home_text">
+                        <h1 id="home_title">
+                            <i class="fa-solid fa-terminal"></i
+                            ><span class="red-it">CODE</span
+                            ><span class="it">Team</span>
+                        </h1>
+                        <h2 id="home_subt">
+                            A responsive single-page template (modular, highly
+                            modifiable) designed by
+                            <a href="" class="link">CODE SPACE</a> and released
+                            for free under the
+                            <a href="" class="link">Creative Commons</a>.
+                        </h2>
+                        <p id="home_p">
+                            This is a
+                            <span class="bold">Banner</span> component, and is
+                            usually used as an intro or opening statement. You
+                            can customize its appearance with a number of
+                            modifiers, as well as assign it an optional
+                            <code>onload</code> or
+                            <code>onscroll</code> transition modifier (<a
+                                href=""
+                                class="link"
+                                >details</a
+                            >).
+                        </p>
+                        <button id="home_button" class="wt_button">
+                            GET STARTED
+                        </button>
+                    </div>
+                    <div id="home_image">
+                        <img src="img/banner.jpg" alt="diving" id="banner_1" />
+                    </div>
+                </div>
+            </section>
+            <!---- Additional elements 2 ---->
+            <section id="add-elem-2">
+                <div id="ae2_codeblock">
+                    <h3 class="ae2_titles">Code</h3>
+                    <code id="ae2_code">
+                        <pre>
 i = 0; 
 
 while (!deck.isInOrder()) { 
@@ -59,81 +74,75 @@ while (!deck.isInOrder()) {
 } 
 
 print 'It took ' + i `'iterations to sort the deck.';
-            </pre>
-          </code>
-        </div>
-        <hr class="solid" />
-        <div id="ae2_icons">
-          <h3>Icons</h3>
-          <div id="ae2_style1">
-            <h4>Style #1</h4>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-          <div id="ae2_style2">
-            <h4>Style #2</h4>
-            <i class="round_i fa-brands fa-twitter"></i>
-            <i class="round_i fa-brands fa-facebook-f"></i>
-            <i class="round_i fa-brands fa-instagram"></i>
-            <i class="round_i fa-brands fa-github"></i>
-            <i class="round_i fa-brands fa-youtube"></i>
-          </div>
-        </div>
-
-        <hr class="solid" />
-
-        <div id="ae2_buttons">
-          <h3>Buttons</h3>
-          <div id="ae2_buttons">
-            <button class="first_row bk_button">Primary</button>
-            <button class="first_row wt_button">Default</button>
-            <button class="second_row bk_button">Large</button>
-            <button class="second_row wt_button">Default</button>
-            <button class="second_row sm_button">Small</button>
-            <button class="fit wt_button">Fit</button>
-            <button class="fit bk_button">Fit</button>
-            <button class="fit bk_button">Fit</button>
-            <button class="fit wt_button">Fit</button>
-            <button class="fit_sm bk_button">Fit+Small</button>
-            <button class="fit_sm wt_button">Fit+Small</button>
-            <button class="fit_sm bk_button">Fit+Small</button>
-            <button class="fit_sm wt_button">Fit+Small</button>
-            <button class="icon bk_button" id="search">Icon</button>
-            <button class="icon wt_button" id="dload">Icon</button>
-            <button class="low_alpha bk_button">Primary</button>
-            <button class="low_alpha wt_button">Default</button>
-          </div>
-        </div>
-
-        <hr class="solid" />
-
-        <div id="ae2_actions">
-          <h3>Actions</h3>
-          <div id="ae2_default">
-            <h4>Default</h4>
-            <button class="first_row bk_button">Default</button>
-            <button class="first_row wt_button">Default</button>
-          </div>
-          <div id="ae2_small">
-            <h4>Small</h4>
-            <button class="sm_row bk_button">Small</button>
-            <button class="sm_row wt_button">Small</button>
-          </div>
-          <div id="ae2_stacked">
-            <h4>Stacked</h4>
-            <button class="stack bk_button">Default</button>
-            <button class="stack wt_button">Default</button>
-          </div>
-          <div id="ae2_stacked-fit">
-            <h4>Stacked+Fit</h4>
-            <button class="stack_fit bk_button">Default</button>
-            <button class="stack_fit wt_button">Default</button>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+            </pre
+                        >
+                    </code>
+                </div>
+                <div id="ae2_icons">
+                    <h3 class="ae2_titles">Icons</h3>
+                    <div id="ae2_style1">
+                        <h4 class="ae2_subt">Style #1</h4>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div id="ae2_style2">
+                        <h4 class="ae2_subt">Style #2</h4>
+                        <i class="round_i fa-brands fa-twitter"></i>
+                        <i class="round_i fa-brands fa-facebook-f"></i>
+                        <i class="round_i fa-brands fa-instagram"></i>
+                        <i class="round_i fa-brands fa-github"></i>
+                        <i class="round_i fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+                <div id="ae2_buttons">
+                    <h3 class="ae2_titles">Buttons</h3>
+                    <div id="ae2_btn">
+                        <button class="first_row bk_button">Primary</button>
+                        <button class="first_row wt_button">Default</button>
+                        <button class="second_row bk_button">Large</button>
+                        <button class="second_row wt_button">Default</button>
+                        <button class="second_row sm_button">Small</button>
+                        <button class="fit wt_button">Fit</button>
+                        <button class="fit bk_button">Fit</button>
+                        <button class="fit bk_button">Fit</button>
+                        <button class="fit wt_button">Fit</button>
+                        <button class="fit_sm bk_button">Fit+Small</button>
+                        <button class="fit_sm wt_button">Fit+Small</button>
+                        <button class="fit_sm bk_button">Fit+Small</button>
+                        <button class="fit_sm wt_button">Fit+Small</button>
+                        <button class="icon bk_button" id="search">Icon</button>
+                        <button class="icon wt_button" id="dload">Icon</button>
+                        <button class="low_alpha bk_button">Primary</button>
+                        <button class="low_alpha wt_button">Default</button>
+                    </div>
+                </div>
+                <div id="ae2_actions">
+                    <h3 class="ae2_titles">Actions</h3>
+                    <div id="ae2_default">
+                        <h4 class="ae2_subt">Default</h4>
+                        <button class="first_row bk_button">Default</button>
+                        <button class="first_row wt_button">Default</button>
+                    </div>
+                    <div id="ae2_small">
+                        <h4 class="ae2_subt">Small</h4>
+                        <button class="sm_row bk_button">Small</button>
+                        <button class="sm_row wt_button">Small</button>
+                    </div>
+                    <div id="ae2_stacked">
+                        <h4 class="ae2_subt">Stacked</h4>
+                        <button class="stack bk_button">Default</button>
+                        <button class="stack wt_button">Default</button>
+                    </div>
+                    <div id="ae2_stacked-fit">
+                        <h4 class="ae2_subt">Stacked+Fit</h4>
+                        <button class="stack_fit bk_button">Default</button>
+                        <button class="stack_fit wt_button">Default</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
