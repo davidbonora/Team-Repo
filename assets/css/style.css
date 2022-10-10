@@ -130,6 +130,7 @@ span.bold {
 #ae2_buttons > .ae2_titles,
 #ae2_actions > .ae2_titles {
     flex-basis: 30%;
+    font-weight: 300;
 }
 
 .ae2_subt {
@@ -180,6 +181,18 @@ span.bold {
   display: inline-flexbox;
 }
 
+.ae2_subt {
+    font-weight: 300;
+    margin-bottom: 1.2em;
+}
+
+#ae2_small > h4,
+#ae2_stacked > h4,
+#ae2_stacked-fit > h4
+{
+    margin-top: 2.2em;
+}
+
 #ae2_default .first_row {
   padding-bottom: 1.2em;
   padding-top: 1.2em;
@@ -190,7 +203,58 @@ span.bold {
   font-size: 0.775rem;
 }
 
+#ae2_default button:first-of-type,
+#ae2_small button:first-of-type {
+    margin-right: 1em;
+} 
+
 .bk_button {
     background-color: black;
     color: white;
+}
+
+#ae2_small .sm_row {
+    font-size: 0.575rem;
+    font-weight: 300;
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    border-radius: 2rem;
+}
+
+#ae2_stacked .stack {
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    border-radius: 2rem;
+    font-weight: 300;
+    font-size: 0.775rem; 
+    display: block;
+}
+
+#ae2_stacked button:first-of-type,
+#ae2_stacked-fit button:first-of-type {  
+    margin-bottom: 2.2em;
+}
+
+#ae2_stacked-fit .stack_fit {
+    padding-bottom: 1.2em;
+    padding-top: 1.2em;
+    padding-right: 9.2em;
+    padding-left: 9.2em;
+    border-radius: 2rem;
+    font-weight: 300;
+    font-size: 0.775rem;
+    display: block;
+}
+
+#ae2_actions .wt_button:hover {
+    border: 1px solid rgb(115, 210, 218);
+    color: rgb(115, 210, 218);
+}
+
+#ae2_actions .bk_button:hover {
+    background-color: rgb(115, 210, 218);
 }
