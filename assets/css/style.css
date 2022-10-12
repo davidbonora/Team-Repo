@@ -14,7 +14,6 @@
   box-sizing: border-box;
 }
 
-*,
 ::before,
 ::after {
   margin: 0;
@@ -22,42 +21,301 @@
   border: 0;
   box-sizing: 0;
 }
-
-h2 {
+.items {
   text-align: center;
+  color: black;
+  font-size: 16px;
 }
-
-p {
-  text-align: center;
-  color: grey;
+.word-item {
+  font-weight: 600;
 }
-
-main {
-  color: grey;
-  width: 100%;
+.italic {
+  font-style: italic;
+}
+.under-line {
+  text-decoration: underline;
+}
+/*-----------------Grid*/
+.border {
+  background-color: white;
+  justify-content: center;
+}
+.grid-items {
+  color: #cccccc;
   display: grid;
-  grid-gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  padding: 1em;
-  margin-right: 8em;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: 25% 25% 25% 25%;
+  justify-content: center;
+  width: 50%;
+  margin: 2.5% auto 20% auto;
+  height: 100%;
 }
-
-i {
+.emojis-items {
   color: #000;
   border-radius: 50%;
-  border: 2px solid grey;
+  border: 2px solid #cccccc;
   padding: 1em;
   margin: 2em;
 }
-
-div {
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve {
   text-align: center;
-  font-size: large;
-  padding: 1em;
-  width: 50%;
   height: 100%;
-  align-items: center;
-  margin: 7em;
+  color: #000;
+  padding: 5px;
+}
+.two,
+.five,
+.eight {
+  border-bottom: 0.5px #cccccc solid;
+  border-right: 0.5px #cccccc solid;
+  border-left: 0.5px #cccccc solid;
+}
+.one,
+.three,
+.four,
+.six,
+.seven,
+.nine {
+  border-bottom: 0.5px #cccccc solid;
+}
+.eleven {
+  border-right: 0.5px #cccccc solid;
+  border-left: 0.5px #cccccc solid;
 }
 
+/* Form*/
+
+form {
+  font-size: 20px;
+  text-align: center;
+}
+
+.Form-body {
+  padding-left: 20em;
+}
+
+.h4-Form {
+  font-size: 30px;
+  float: left;
+  margin: 1em;
+  padding-left: 5em;
+}
+.p-span1 {
+  padding-right:27em;
+  
+}
+
+.imput1{
+  margin-left: 5em;
+
+  }
+
+.p-span2 {
+ margin-right:16em;
+  
+}
+
+.imput2{
+  margin-left: 10em;
+}
+
+input {
+  border: 1px solid rgb(182, 178, 178);
+  border-radius: 5%;
+  padding: 1.3em 10em;
+  margin-bottom: 8em;
+}
+
+.p-Department {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 13em;
+}
+
+select {
+  border: 1px solid rgb(182, 178, 178);
+  border-radius: 3%;
+  margin-bottom: 10em;
+  padding: 1.5em 65em;
+  text-align: left;
+  padding-left: 1em;
+}
+
+input[type= "checkbox"]{
+  width: 25px;
+  height: 20px;
+  background: rgb(9, 9, 9);
+  border: 2px solid black;
+  border-radius: 20%;
+}
+
+.checkbox {
+ margin: 4em;
+ padding: 2em;
+}
+
+.p-Message {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 12.5em;
+}
+
+.textarea {
+  border: 2px;
+  border: 1px solid rgb(182, 178, 178);
+  border-radius: 20%;
+}
+
+.checkbox2{
+ margin-top: 3em;
+}
+
+button {
+  border: 1px solid grey;
+  border-radius: 40%;
+  padding: 1.5em 1.5em;
+}
+
+.button-position{
+  margin-right: 19em;
+}
+
+/* Tables */
+
+.p-table1 {
+  font-size: 30px;
+  margin-right:3em ;
+}
+
+.p-table2 {
+  font-size: 30px;
+ margin-right: 20em;
+}
+
+.table1{
+  font-size: larger;
+  text-align: center;
+  float: right;
+  padding: 5em 15em;
+}
+
+
+.table2{
+  font-size: larger;
+  text-align: center;
+  float: right;
+  padding: 5em 15em;
+}
+
+th {
+  padding: 2em 2em;
+  border-bottom: 1px solid grey;
+}
+
+td {
+  padding: 3em 3em;
+  border-top: 1px solid grey;
+}
+
+.rows {
+  background-color: beige;
+}
+
+hr.solid {
+  width: 100%;
+  border-top: 1px solid #bbb;
+}
+
+/* Images */
+
+.h4-images {
+  font-size: 30px;
+  margin: 2em;
+  float: left;
+}
+
+.image1 {
+  float: right;
+  width: 1400px;
+  height: 800px;
+  margin: 5em;
+}
+
+.image2 {
+  float: left;
+  width: 350px;
+  height: 450px;
+  margin: 1em;
+}
+
+.image3 {
+  float: right;
+  width: 400px;
+  height: 300px;
+  margin: 1em;
+}
+
+.div-Images {
+  padding-left: 10em;
+}
+
+.h4-Fit {
+  padding-right: 46em;
+  font-size: 30px;
+}
+
+.div-image1 {
+  float: right;
+  font-size: 25px;
+  text-align: center;
+}
+
+.h4-Left {
+  font-size: 25px;
+  float: left;
+}
+
+.div-image2 {
+  float: left;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+.h4-Right {
+  font-size: 25px;
+  float: left;
+}
+
+.div-image3 {
+  float: right;
+  font-size: 20px;
+  text-align: right;
+  line-height: 2em;
+}
+
+.div-Box {
+  text-align: center;
+}
+
+.h4-Box {
+  font-size: 25px;
+  float: left;
+}
+
+.p-Box {
+  font-size: 20px;
+  line-height: 2em;
+  float: right;
+  padding-left: 6em;
+}
