@@ -130,7 +130,7 @@
   font-style: e;
 }
 
-.text,
+.text-element,
 .headings,
 .unordered-list,
 .ordered-list,
@@ -143,16 +143,16 @@
   margin-bottom: 3em;
 }
 
-.text u {
+.text-element u {
   text-decoration-color: var(--black);
 }
 
-.text b,
+.text-element b,
 strong {
   color: var(--black);
 }
 
-.text > h3,
+.text-element > h3,
 .headings > h3,
 .unordered-list > h3,
 .ordered-list > h3,
@@ -163,7 +163,7 @@ strong {
   flex-basis: 30%;
 }
 
-.text > p,
+.text-element > p,
 .heading-examples,
 .unordered-examples,
 .ordered-example,
