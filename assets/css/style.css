@@ -28,16 +28,6 @@ main{
     width: 100%;
     height: 100%;
 }
-.images::-webkit-scrollbar-thumb:horizontal{
-    background-color: red;
-  }
-  .images::-webkit-scrollbar-track:horizontal{
-    background-color: red;
-  }
-  .images::-webkit-scrollbar-track-piece:horizontal{
-    background-color: red;
-    color: red;
-  }
 /*------------------------Container y Hover*/
 .container {
     display:inline-block;
@@ -158,7 +148,7 @@ footer{
     height: 200px;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    margin-bottom: 0;
 }
 .twitter, .facebook, .linkedin, .github, .instagram{
     border: 3px solid #7AA194;
